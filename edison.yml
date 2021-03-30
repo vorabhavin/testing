@@ -3,3 +3,6 @@ redirects:
     -
         from: 'https://testing-preview.dev.pfizerstatic.io/homepage'
         to: 'https://testing-preview.dev.pfizerstatic.io/test'
+    -
+        from: 'https://testing-preview.dev.pfizerstatic.io/xyz'
+        to: 'https://testing-preview.dev.pfizerstatic.io/ghos'
