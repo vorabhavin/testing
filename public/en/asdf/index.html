@@ -32,19 +32,39 @@
     "siteName": ""
 };
 
-                            window.pfAnalyticsData = {
-                    'pfPage': pageAnalytics
-                };
+                            var cookieUuid = document.cookie.split(';').filter(function(item) {
+                    return item.trim().indexOf('pf_uuid=') == 0;
+                });
+
+                if (!cookieUuid.length) {
+                    window.pfAnalyticsData = {
+                        'pfPage': pageAnalytics
+                    };
+                } else {
+                    var pf_uuid = cookieUuid[0].split('=');
+                    window.pfAnalyticsData = {
+                        'pfPage': pageAnalytics,
+                        'pfUser':{
+                            'userType': 'GRV',
+                            'userID': pf_uuid[1],
+                            'userDepartment': '',
+                            'userBusinessUnit': '',
+                            'userCountry': '',
+                            'userRegion': ''
+                        }
+                    };
+                }
                    </script>
     
     
-                        <link rel="alternate" href="https://testing-preview.dev.pfizerstatic.io/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa" hreflang="hi" />
+                        <link rel="alternate" href="https://testing-preview.site.pfizer/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa" hreflang="hi" />
             
             <meta name="description" content="test" />
         <meta name="keywords" content="" />
         <meta name="abstract" content="" />
         <meta name="language" content="en" />
 
+                    <meta name="auth" content="public" />
         
                     <meta name="robots" content="all" />
         
@@ -62,19 +82,18 @@
     
             <meta property="og:title" content="asdf | test" />
         <meta property="og:description" content="test" />
-        <meta property="og:url" content="https://testing-preview.dev.pfizerstatic.io/en/asdf" />
+        <meta property="og:url" content="https://testing-preview.site.pfizer/en/asdf" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="" />
     
             <meta property="twitter:title" content="" />
         <meta property="twitter:description" content="" />
-        <meta property="twitter:url" content="https://testing-preview.dev.pfizerstatic.io/en/asdf" />
+        <meta property="twitter:url" content="https://testing-preview.site.pfizer/en/asdf" />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:image" content="" />
     
                                                                     <link rel="stylesheet" href="https://pkg-cdn.digitalpfizer.com/helix-web-components/8.20.0/helix/helix.css" media="print" onload="this.media='all'" >
-                                                                                                    <script type="text/javascript" src="/canvasWebBuilderUtilities.js"></script>
-                                                <link rel="stylesheet" href="https://pkg-cdn.digitalpfizer.com/helix-extras/0.45.0/helix-extras/helix-extras.css" media="print" onload="this.media='all'" >
+                                                                                            <link rel="stylesheet" href="https://pkg-cdn.digitalpfizer.com/helix-extras/0.45.0/helix-extras/helix-extras.css" media="print" onload="this.media='all'" >
                                                                 <script type="text/javascript" src="/external_link.js"></script>
                                                 <link rel="stylesheet" href="/external-link.css" media="print" onload="this.media='all'" >
                                                                 <script type="text/javascript" src="/promotional_popup.js"></script>
@@ -100,7 +119,7 @@
         <script nomodule type="text/javascript" src="https://pkg-cdn.digitalpfizer.com/helix-web-components/8.20.0/helix/helix.js"></script>
                                             <script type="module" src="https://pkg-cdn.digitalpfizer.com/helix-extras/0.45.0/helix-extras/helix-extras.esm.js" crossorigin></script>
         <script nomodule type="text/javascript" src="https://pkg-cdn.digitalpfizer.com/helix-extras/0.45.0/helix-extras/helix-extras.js"></script>
-                                                                                                    
+                                                                                    
 <!-- External Link Popup scripts -->
     <script type="text/javascript">
         window.externalLinkConfig = {"popups":[{"id":"d635b1c5-a779-414c-9596-6e5376fe529e","body":"","type":"primary","style":"default","title":"","cancel":"","continue":"","language":"en","whitelist":"","language_name":"English"},{"id":"38e526fc-9ae9-4611-b787-cb54dabe778e","body":"","type":"primary","style":"default","title":"","cancel":"","continue":"","language":"hi","whitelist":"","language_name":"Hindi"},{"id":"a76d64bb-656b-4cdd-a28b-c84376111910","body":"","name":"Additional popup","type":"override","style":"default","title":"","cancel":"","enabled":false,"continue":"","language":"en","blacklist":"","language_name":"English"}],"enabled":true};

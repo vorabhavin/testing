@@ -1,17 +1,17 @@
 framework: false
 redirects:
     -
-        from: 'https://testing-preview.dev.pfizerstatic.io/homepage'
-        to: 'https://testing-preview.dev.pfizerstatic.io/test'
+        from: 'https://testing-preview.site.pfizer/homepage'
+        to: 'https://testing-preview.site.pfizer/test'
     -
-        from: 'https://testing-preview.dev.pfizerstatic.io/xyz'
-        to: 'https://testing-preview.dev.pfizerstatic.io/ghos'
+        from: 'https://testing-preview.site.pfizer/xyz'
+        to: 'https://testing-preview.site.pfizer/ghos'
     -
-        from: 'https://testing-preview.dev.pfizerstatic.io/asdfafd'
-        to: 'https://testing-preview.dev.pfizerstatic.io/'
+        from: 'https://testing-preview.site.pfizer/asdfafd'
+        to: 'https://testing-preview.site.pfizer/'
     -
-        from: 'https://testing-preview.dev.pfizerstatic.io/en/demo-english-page/index'
-        to: 'https://testing-preview.dev.pfizerstatic.io/hi/test/index'
+        from: 'https://testing-preview.site.pfizer/en/demo-english-page/index'
+        to: 'https://testing-preview.site.pfizer/hi/test/index'
     -
-        from: 'https://testing-preview.dev.pfizerstatic.io/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa/index'
-        to: 'https://testing-preview.dev.pfizerstatic.io/bhavinvora'
+        from: 'https://testing-preview.site.pfizer/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa/index'
+        to: 'https://testing-preview.site.pfizer/bhavinvora'
