@@ -6,3 +6,12 @@ redirects:
     -
         from: 'https://testing-preview.dev.pfizerstatic.io/xyz'
         to: 'https://testing-preview.dev.pfizerstatic.io/ghos'
+    -
+        from: 'https://testing-preview.dev.pfizerstatic.io/asdfafd'
+        to: 'https://testing-preview.dev.pfizerstatic.io/'
+    -
+        from: 'https://testing-preview.dev.pfizerstatic.io/en/demo-english-page/index'
+        to: 'https://testing-preview.dev.pfizerstatic.io/hi/test/index'
+    -
+        from: 'https://testing-preview.dev.pfizerstatic.io/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa/index'
+        to: 'https://testing-preview.dev.pfizerstatic.io/bhavinvora'
