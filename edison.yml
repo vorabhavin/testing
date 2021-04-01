@@ -1,1 +1,17 @@
 framework: false
+redirects:
+    -
+        from: 'https://test.com/homepage'
+        to: 'https://test.com/test'
+    -
+        from: 'https://test.com/xyz'
+        to: 'https://test.com/ghos'
+    -
+        from: 'https://test.com/asdfafd'
+        to: 'https://test.com/'
+    -
+        from: 'https://test.com/en/demo-english-page/index'
+        to: 'https://test.com/hi/test/index'
+    -
+        from: 'https://test.com/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa/index'
+        to: 'https://test.com/bhavinvora'
