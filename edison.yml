@@ -1,17 +1,11 @@
 framework: false
 redirects:
     -
-        from: 'https://testing-preview.site.pfizer/homepage'
-        to: 'https://testing-preview.site.pfizer/test'
+        from: 'https://testing1-preview.site.pfizer/asfdasdf'
+        to: 'https://testing1-preview.site.pfizer/child1'
     -
-        from: 'https://testing-preview.site.pfizer/xyz'
-        to: 'https://testing-preview.site.pfizer/ghos'
+        from: 'https://testing1-preview.site.pfizer/asdfafd'
+        to: 'https://testing1-preview.site.pfizer/index/fr'
     -
-        from: 'https://testing-preview.site.pfizer/asdfafd'
-        to: 'https://testing-preview.site.pfizer/'
-    -
-        from: 'https://testing-preview.site.pfizer/en/demo-english-page/index'
-        to: 'https://testing-preview.site.pfizer/hi/test/index'
-    -
-        from: 'https://testing-preview.site.pfizer/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa/index'
-        to: 'https://testing-preview.site.pfizer/bhavinvora'
+        from: 'https://testing1-preview.site.pfizer/'
+        to: 'https://testing1-preview.site.pfizer/en'
