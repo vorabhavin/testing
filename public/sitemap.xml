@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <sitemap>
-        <loc>https://testing1-preview.site.pfizer/local.sitemap.xml</loc>
-    
-        <lastmod>2021-04-12T13:01:09+00:00</lastmod>
-    </sitemap>
-    <sitemap>
-        <loc>https://testing1-preview.site.pfizer/child1/sitemap.xml</loc>
-    
-        <lastmod>2021-04-12T13:01:09+00:00</lastmod>
-    </sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://testing-preview.site.pfizer/en</loc>
+        <lastmod>2021-04-12T13:03:48+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://testing-preview.site.pfizer/en/asdf</loc>
+        <lastmod>2021-04-12T13:03:48+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://testing-preview.site.pfizer/en/demo-english-page</loc>
+        <lastmod>2021-04-12T13:03:48+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://testing-preview.site.pfizer/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa</loc>
+        <lastmod>2021-04-12T13:03:48+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://testing-preview.site.pfizer/hi/test</loc>
+        <lastmod>2021-04-12T13:03:48+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
