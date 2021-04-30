@@ -1,26 +1,14 @@
 framework: false
 redirects:
     -
-        from: 'https://testing-preview.site.pfizer/homepage'
-        to: 'https://testing-preview.site.pfizer/test'
+        from: 'https://canvas01-preview.site.pfizer/test-page'
+        to: 'https://canvas01-preview.site.pfizer/en/test-page'
     -
-        from: 'https://testing-preview.site.pfizer/xyz'
-        to: 'https://testing-preview.site.pfizer/ghos'
+        from: 'https://canvas01-preview.site.pfizer/test-page-123'
+        to: 'https://canvas01-preview.site.pfizer/en/test-page-123'
     -
-        from: 'https://testing-preview.site.pfizer/asdfafd'
-        to: 'https://testing-preview.site.pfizer/'
+        from: 'https://canvas01-preview.site.pfizer/new-page'
+        to: 'https://canvas01-preview.site.pfizer/en/new-page'
     -
-        from: 'https://testing-preview.site.pfizer/en/demo-english-page'
-        to: 'https://testing-preview.site.pfizer/hi/test'
-    -
-        from: 'https://testing-preview.site.pfizer/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa'
-        to: 'https://testing-preview.site.pfizer/bhavinvora'
-    -
-        from: 'https://testing-preview.site.pfizer/asdf'
-        to: 'https://testing-preview.site.pfizer/en/asdf'
-    -
-        from: 'https://testing-preview.site.pfizer/demo-english-page'
-        to: 'https://testing-preview.site.pfizer/en/demo-english-page'
-    -
-        from: 'https://testing-preview.site.pfizer/'
-        to: 'https://testing-preview.site.pfizer/en'
+        from: 'https://canvas01-preview.site.pfizer/new-page/demo-subpage-1'
+        to: 'https://canvas01-preview.site.pfizer/en/new-page/demo-subpage-1'

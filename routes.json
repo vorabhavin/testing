@@ -1,100 +1,100 @@
 {
     "preview": {
         "configuration": {
-            "sitename": "testing-preview.site.pfizer"
+            "sitename": "canvas01-preview.site.pfizer"
         },
         "routes": [
             {
-                "sitename": "testing-preview.site.pfizer",
-                "routepath": "/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa",
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "^/$",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing-preview.dev.pfizerstatic.io/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-preview.site.pfizer",
-                "routepath": "/en/asdf",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing-preview.dev.pfizerstatic.io/en/asdf",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-preview.site.pfizer",
-                "routepath": "/hi/test",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing-preview.dev.pfizerstatic.io/hi/test",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-preview.site.pfizer",
-                "routepath": "/en/demo-english-page",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing-preview.dev.pfizerstatic.io/en/demo-english-page",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-preview.site.pfizer",
-                "routepath": "/en",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing-preview.dev.pfizerstatic.io/en",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-preview.site.pfizer",
-                "routepath": "/private/(.*)",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing-preview.dev.pfizerstatic.io/private/$1",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io",
                         "requiresAuth": true,
                         "validation": []
                     }
                 ]
             },
             {
-                "sitename": "testing-preview.site.pfizer",
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "/en/test-page",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/en/test-page",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "/en/test-page-123",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/en/test-page-123",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "/en/new-page",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/en/new-page",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "/en/new-page/demo-subpage-1",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/en/new-page/demo-subpage-1",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "/private/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/private/$1",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
                 "routepath": "/version.txt",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing-preview.dev.pfizerstatic.io/version.txt",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/version.txt",
                         "requiresAuth": false,
                         "validation": []
                     }
                 ]
             },
             {
-                "sitename": "testing-preview.site.pfizer",
+                "sitename": "canvas01-preview.site.pfizer",
                 "routepath": "^/(.*)",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing-preview.dev.pfizerstatic.io/$1",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/$1",
                         "requiresAuth": false,
                         "validation": []
                     }
@@ -104,100 +104,100 @@
     },
     "test": {
         "configuration": {
-            "sitename": "testing-test.site.pfizer"
+            "sitename": "canvas01-test.site.pfizer"
         },
         "routes": [
             {
-                "sitename": "testing-test.site.pfizer",
-                "routepath": "/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa",
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "^/$",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.test.pfizerstatic.io/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-test.site.pfizer",
-                "routepath": "/en/asdf",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing.test.pfizerstatic.io/en/asdf",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-test.site.pfizer",
-                "routepath": "/hi/test",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing.test.pfizerstatic.io/hi/test",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-test.site.pfizer",
-                "routepath": "/en/demo-english-page",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing.test.pfizerstatic.io/en/demo-english-page",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-test.site.pfizer",
-                "routepath": "/en",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing.test.pfizerstatic.io/en",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-test.site.pfizer",
-                "routepath": "/private/(.*)",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing.test.pfizerstatic.io/private/$1",
+                        "origin": "https://canvas01.test.pfizerstatic.io",
                         "requiresAuth": true,
                         "validation": []
                     }
                 ]
             },
             {
-                "sitename": "testing-test.site.pfizer",
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "/en/test-page",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io/en/test-page",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "/en/test-page-123",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io/en/test-page-123",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "/en/new-page",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io/en/new-page",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "/en/new-page/demo-subpage-1",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io/en/new-page/demo-subpage-1",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "/private/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io/private/$1",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
                 "routepath": "/version.txt",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.test.pfizerstatic.io/version.txt",
+                        "origin": "https://canvas01.test.pfizerstatic.io/version.txt",
                         "requiresAuth": false,
                         "validation": []
                     }
                 ]
             },
             {
-                "sitename": "testing-test.site.pfizer",
+                "sitename": "canvas01-test.site.pfizer",
                 "routepath": "^/(.*)",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.test.pfizerstatic.io/$1",
+                        "origin": "https://canvas01.test.pfizerstatic.io/$1",
                         "requiresAuth": false,
                         "validation": []
                     }
@@ -207,100 +207,100 @@
     },
     "live": {
         "configuration": {
-            "sitename": "testing-live.site.pfizer"
+            "sitename": "canvas01-live.site.pfizer"
         },
         "routes": [
             {
-                "sitename": "testing-live.site.pfizer",
-                "routepath": "/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa",
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "^/$",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing-live.dev.pfizerstatic.io/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-live.site.pfizer",
-                "routepath": "/en/asdf",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing-live.dev.pfizerstatic.io/en/asdf",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-live.site.pfizer",
-                "routepath": "/hi/test",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing-live.dev.pfizerstatic.io/hi/test",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-live.site.pfizer",
-                "routepath": "/en/demo-english-page",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing-live.dev.pfizerstatic.io/en/demo-english-page",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-live.site.pfizer",
-                "routepath": "/en",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing-live.dev.pfizerstatic.io/en",
-                        "requiresAuth": false,
-                        "validation": []
-                    }
-                ]
-            },
-            {
-                "sitename": "testing-live.site.pfizer",
-                "routepath": "/private/(.*)",
-                "routes": [
-                    {
-                        "type": "static",
-                        "origin": "https://testing-live.dev.pfizerstatic.io/private/$1",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io",
                         "requiresAuth": true,
                         "validation": []
                     }
                 ]
             },
             {
-                "sitename": "testing-live.site.pfizer",
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "/en/test-page",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/en/test-page",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "/en/test-page-123",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/en/test-page-123",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "/en/new-page",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/en/new-page",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "/en/new-page/demo-subpage-1",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/en/new-page/demo-subpage-1",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "/private/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/private/$1",
+                        "requiresAuth": true,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
                 "routepath": "/version.txt",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing-live.dev.pfizerstatic.io/version.txt",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/version.txt",
                         "requiresAuth": false,
                         "validation": []
                     }
                 ]
             },
             {
-                "sitename": "testing-live.site.pfizer",
+                "sitename": "canvas01-live.site.pfizer",
                 "routepath": "^/(.*)",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing-live.dev.pfizerstatic.io/$1",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/$1",
                         "requiresAuth": false,
                         "validation": []
                     }
@@ -315,60 +315,60 @@
         "routes": [
             {
                 "sitename": "test.com",
-                "routepath": "/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa",
+                "routepath": "^/$",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.pfizerstatic.io/hi/asdfasfasdfasdfasfasdfasdfasdffafsfasdfassadfasdfasdfasdfasdfasdfasfasfasfasfasdfasdfasdfasdfasfasdfa",
-                        "requiresAuth": false,
+                        "origin": "https://canvas01.pfizerstatic.io",
+                        "requiresAuth": true,
                         "validation": []
                     }
                 ]
             },
             {
                 "sitename": "test.com",
-                "routepath": "/en/asdf",
+                "routepath": "/en/test-page",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.pfizerstatic.io/en/asdf",
-                        "requiresAuth": false,
+                        "origin": "https://canvas01.pfizerstatic.io/en/test-page",
+                        "requiresAuth": true,
                         "validation": []
                     }
                 ]
             },
             {
                 "sitename": "test.com",
-                "routepath": "/hi/test",
+                "routepath": "/en/test-page-123",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.pfizerstatic.io/hi/test",
-                        "requiresAuth": false,
+                        "origin": "https://canvas01.pfizerstatic.io/en/test-page-123",
+                        "requiresAuth": true,
                         "validation": []
                     }
                 ]
             },
             {
                 "sitename": "test.com",
-                "routepath": "/en/demo-english-page",
+                "routepath": "/en/new-page",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.pfizerstatic.io/en/demo-english-page",
-                        "requiresAuth": false,
+                        "origin": "https://canvas01.pfizerstatic.io/en/new-page",
+                        "requiresAuth": true,
                         "validation": []
                     }
                 ]
             },
             {
                 "sitename": "test.com",
-                "routepath": "/en",
+                "routepath": "/en/new-page/demo-subpage-1",
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.pfizerstatic.io/en",
-                        "requiresAuth": false,
+                        "origin": "https://canvas01.pfizerstatic.io/en/new-page/demo-subpage-1",
+                        "requiresAuth": true,
                         "validation": []
                     }
                 ]
@@ -379,7 +379,7 @@
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.pfizerstatic.io/private/$1",
+                        "origin": "https://canvas01.pfizerstatic.io/private/$1",
                         "requiresAuth": true,
                         "validation": []
                     }
@@ -391,7 +391,7 @@
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.pfizerstatic.io/version.txt",
+                        "origin": "https://canvas01.pfizerstatic.io/version.txt",
                         "requiresAuth": false,
                         "validation": []
                     }
@@ -403,7 +403,7 @@
                 "routes": [
                     {
                         "type": "static",
-                        "origin": "https://testing.pfizerstatic.io/$1",
+                        "origin": "https://canvas01.pfizerstatic.io/$1",
                         "requiresAuth": false,
                         "validation": []
                     }
