@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <sitemap>
-        <loc>https://canvas01-preview.site.pfizer/local.sitemap.xml</loc>
-    
-        <lastmod>2021-05-24T13:18:23+00:00</lastmod>
-    </sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://canvas01-preview.dev.pfizerstatic.io</loc>
+        <lastmod>2021-05-24T14:03:36+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
