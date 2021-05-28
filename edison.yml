@@ -1,14 +1,1 @@
 framework: false
-redirects:
-    -
-        from: 'https://canvas01-preview.site.pfizer/test-page'
-        to: 'https://canvas01-preview.site.pfizer/en/test-page'
-    -
-        from: 'https://canvas01-preview.site.pfizer/test-page-123'
-        to: 'https://canvas01-preview.site.pfizer/en/test-page-123'
-    -
-        from: 'https://canvas01-preview.site.pfizer/new-page'
-        to: 'https://canvas01-preview.site.pfizer/en/new-page'
-    -
-        from: 'https://canvas01-preview.site.pfizer/new-page/demo-subpage-1'
-        to: 'https://canvas01-preview.site.pfizer/en/new-page/demo-subpage-1'
