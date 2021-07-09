@@ -1,0 +1,582 @@
+{
+    "preview": {
+        "configuration": {
+            "sitename": "canvas01-preview.site.pfizer"
+        },
+        "routes": [
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "^/$",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io",
+                        "requiresAuth": true,
+                        "validation": [
+                            {
+                                "type": "or",
+                                "rules": [
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "notvalidated"
+                                        }
+                                    },
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "selfvalidated"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "redirect",
+                        "origin": "https://canvas01-preview.site.pfizer/login-page",
+                        "requiresAuth": false,
+                        "validation": [],
+                        "originQueryParameters": {
+                            "destination": ""
+                        }
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "/thumbnail_611.html",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/thumbnail_611.html",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "/twitter_thumbnail_611.html",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/twitter_thumbnail_611.html",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "/login-page",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/login-page",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "/private/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/private/$1",
+                        "requiresAuth": true,
+                        "validation": [
+                            {
+                                "type": "or",
+                                "rules": [
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "notvalidated"
+                                        }
+                                    },
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "selfvalidated"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "redirect",
+                        "origin": "https://canvas01-preview.site.pfizer/login-page",
+                        "requiresAuth": false,
+                        "validation": [],
+                        "originQueryParameters": {
+                            "destination": "/private/$1"
+                        }
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "/version.txt",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.dev.pfizerstatic.io/version.txt",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-preview.site.pfizer",
+                "routepath": "^/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-preview.site.pfizer/$1",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            }
+        ]
+    },
+    "test": {
+        "configuration": {
+            "sitename": "canvas01-test.site.pfizer"
+        },
+        "routes": [
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "^/$",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io",
+                        "requiresAuth": true,
+                        "validation": [
+                            {
+                                "type": "or",
+                                "rules": [
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "notvalidated"
+                                        }
+                                    },
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "selfvalidated"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "redirect",
+                        "origin": "https://canvas01-test.site.pfizer/login-page",
+                        "requiresAuth": false,
+                        "validation": [],
+                        "originQueryParameters": {
+                            "destination": ""
+                        }
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "/thumbnail_611.html",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io/thumbnail_611.html",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "/twitter_thumbnail_611.html",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io/twitter_thumbnail_611.html",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "/login-page",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io/login-page",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "/private/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io/private/$1",
+                        "requiresAuth": true,
+                        "validation": [
+                            {
+                                "type": "or",
+                                "rules": [
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "notvalidated"
+                                        }
+                                    },
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "selfvalidated"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "redirect",
+                        "origin": "https://canvas01-test.site.pfizer/login-page",
+                        "requiresAuth": false,
+                        "validation": [],
+                        "originQueryParameters": {
+                            "destination": "/private/$1"
+                        }
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "/version.txt",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.test.pfizerstatic.io/version.txt",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-test.site.pfizer",
+                "routepath": "^/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-test.site.pfizer/$1",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            }
+        ]
+    },
+    "live": {
+        "configuration": {
+            "sitename": "canvas01-live.site.pfizer"
+        },
+        "routes": [
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "^/$",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io",
+                        "requiresAuth": true,
+                        "validation": [
+                            {
+                                "type": "or",
+                                "rules": [
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "notvalidated"
+                                        }
+                                    },
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "selfvalidated"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "redirect",
+                        "origin": "https://canvas01-live.site.pfizer/login-page",
+                        "requiresAuth": false,
+                        "validation": [],
+                        "originQueryParameters": {
+                            "destination": ""
+                        }
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "/thumbnail_611.html",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/thumbnail_611.html",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "/twitter_thumbnail_611.html",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/twitter_thumbnail_611.html",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "/login-page",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/login-page",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "/private/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/private/$1",
+                        "requiresAuth": true,
+                        "validation": [
+                            {
+                                "type": "or",
+                                "rules": [
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "notvalidated"
+                                        }
+                                    },
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "selfvalidated"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "redirect",
+                        "origin": "https://canvas01-live.site.pfizer/login-page",
+                        "requiresAuth": false,
+                        "validation": [],
+                        "originQueryParameters": {
+                            "destination": "/private/$1"
+                        }
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "/version.txt",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.dev.pfizerstatic.io/version.txt",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "canvas01-live.site.pfizer",
+                "routepath": "^/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01-live.site.pfizer/$1",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            }
+        ]
+    },
+    "production": {
+        "configuration": {
+            "sitename": "daurismo.com"
+        },
+        "routes": [
+            {
+                "sitename": "daurismo.com",
+                "routepath": "^/$",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.pfizerstatic.io",
+                        "requiresAuth": true,
+                        "validation": [
+                            {
+                                "type": "or",
+                                "rules": [
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "notvalidated"
+                                        }
+                                    },
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "selfvalidated"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "redirect",
+                        "origin": "https://daurismo.com/login-page",
+                        "requiresAuth": false,
+                        "validation": [],
+                        "originQueryParameters": {
+                            "destination": ""
+                        }
+                    }
+                ]
+            },
+            {
+                "sitename": "daurismo.com",
+                "routepath": "/thumbnail_611.html",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.pfizerstatic.io/thumbnail_611.html",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "daurismo.com",
+                "routepath": "/twitter_thumbnail_611.html",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.pfizerstatic.io/twitter_thumbnail_611.html",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "daurismo.com",
+                "routepath": "/login-page",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.pfizerstatic.io/login-page",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "daurismo.com",
+                "routepath": "/private/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.pfizerstatic.io/private/$1",
+                        "requiresAuth": true,
+                        "validation": [
+                            {
+                                "type": "or",
+                                "rules": [
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "notvalidated"
+                                        }
+                                    },
+                                    {
+                                        "type": "grvProfile",
+                                        "requires": {
+                                            "hcpValidation.status": "selfvalidated"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "redirect",
+                        "origin": "https://daurismo.com/login-page",
+                        "requiresAuth": false,
+                        "validation": [],
+                        "originQueryParameters": {
+                            "destination": "/private/$1"
+                        }
+                    }
+                ]
+            },
+            {
+                "sitename": "daurismo.com",
+                "routepath": "/version.txt",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://canvas01.pfizerstatic.io/version.txt",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            },
+            {
+                "sitename": "daurismo.com",
+                "routepath": "^/(.*)",
+                "routes": [
+                    {
+                        "type": "static",
+                        "origin": "https://daurismo.com/$1",
+                        "requiresAuth": false,
+                        "validation": []
+                    }
+                ]
+            }
+        ]
+    }
+}

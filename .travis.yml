@@ -1,0 +1,58 @@
+# @file
+# .travis.yml - Pfizer Edison Lite CI
+#
+# For Edison Lite sites.
+# Template provided by https://github.com/pfizer/edison_lite_ci
+
+language: python
+
+python:
+  - "3.8"
+
+# Skip build for live branch.
+branches:
+  except:
+    - live
+
+notifications:
+  webhooks:
+    urls:
+      - https://smartsite.pfizersite.io/smartsite/api/v1/ci/notification/travis
+      - https://canvas-deployment-tracker-staging.digitalpfizer.com/api/deployments/track
+      - https://canvas-deployment-tracker.digitalpfizer.com/api/deployments/track
+    on_start: always
+
+env:
+  global:
+    # Set the Edison Lite CI package location.
+    - EDISON_LITE_CI_PATH="$TRAVIS_BUILD_DIR/../edison_lite_ci"
+
+    # Add executables into PATH.
+    - PATH="$PATH:$EDISON_LITE_CI_PATH/bin"
+
+before_install:
+  # Install Edison Lite CI.
+  - git clone --depth 1 git@github.com:pfizer/edison_lite_ci.git --branch 1.x "$EDISON_LITE_CI_PATH"
+  - chmod +x "$EDISON_LITE_CI_PATH/bin" -R
+  - source "$EDISON_LITE_CI_PATH/environment.vars"
+
+  - edison-lite-ci before_install
+
+install:
+  - edison-lite-ci install
+
+script:
+  - edison-lite-ci script
+
+before_deploy:
+  - edison-lite-ci before_deploy
+
+deploy:
+  on:
+    all_branches: true
+  provider: script
+  script: edison-lite-ci deploy
+  skip_cleanup: true
+
+after_deploy:
+  - edison-lite-ci after_deploy
