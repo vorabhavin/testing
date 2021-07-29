@@ -1,5 +1,1 @@
 framework: false
-redirects:
-    -
-        from: 'https://test.com/estsetset'
-        to: 'https://test.com/about-us'
