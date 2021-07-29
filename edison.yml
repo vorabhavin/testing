@@ -1,5 +1,1 @@
 framework: false
-redirects:
-    -
-        from: 'https://canvas01-preview.dev.pfizerstatic.io/about-us'
-        to: 'https://canvas01-preview.dev.pfizerstatic.io/'
