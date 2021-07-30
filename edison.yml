@@ -1,5 +1,14 @@
 framework: false
 redirects:
     -
-        from: 'https://test.com/about-us'
+        from: 'https://test.com/en/about-us'
         to: 'https://test.com/'
+    -
+        from: 'https://test.com/'
+        to: 'https://test.com/en'
+    -
+        from: 'https://test.com/about-us'
+        to: 'https://test.com/en/about-us'
+    -
+        from: 'https://test.com/test'
+        to: 'https://test.com/en/test'
