@@ -1,5 +1,14 @@
 framework: false
 redirects:
     -
-        from: 'https://canvas01.test.pfizerstatic.io/about-us'
+        from: 'https://canvas01.test.pfizerstatic.io/en/about-us'
         to: 'https://canvas01.test.pfizerstatic.io/'
+    -
+        from: 'https://canvas01.test.pfizerstatic.io/'
+        to: 'https://canvas01.test.pfizerstatic.io/en'
+    -
+        from: 'https://canvas01.test.pfizerstatic.io/about-us'
+        to: 'https://canvas01.test.pfizerstatic.io/en/about-us'
+    -
+        from: 'https://canvas01.test.pfizerstatic.io/test'
+        to: 'https://canvas01.test.pfizerstatic.io/en/test'
