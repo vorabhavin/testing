@@ -1,1 +1,5 @@
 framework: false
+redirects:
+    -
+        from: 'https://canvas01-live.dev.pfizerstatic.io/files/Untitled_-Jul-30%2C-2021-1_36-PM.mp4'
+        to: 'https://canvas01-live.dev.pfizerstatic.io/child1/images/custom/3-199-0.png'
